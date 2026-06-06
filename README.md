@@ -9,8 +9,35 @@
 
 ICA to aplikacja webowa wspierająca testerów oprogramowania. Narzędzie wykorzystuje możliwości udostępniane przez API Gemini do automatycznej analizy fragmentów kodu źródłowego pod kątem zgodności z zasadami projektowymi SOLID oraz Prawem Demeter.
 
-## Instalacja bibliotek
+Aplikacja redukuje wysiłek użytkownika do minimum: wystarczy wkleić kod, wybrać język i kliknąć wyślij. Inteligentny agent ukryty w backendzie dokonuje analizy strukturalnej i zwraca precyzyjny, sformatowany raport wraz z gotowymi sugestiami refaktoryzacji.
+
+## Instalacja zależności
+
+Projekt wykorzystuje bibliotekę google-genai umożliwiającą komunikację z Gemini API.
 
 ```bash
 pip install -q -U google-genai
 ```
+
+
+## API KEY
+Aplikacja wymaga klucza dostępu do Gemini API. Utwórz plik `.env` i dodaj:
+
+```env
+KEY="twój_klucz_api"
+```
+
+## Uruchomienie aplikacji
+
+W celu uruchomienia lokalnego serwera wpisz w CMD:
+
+```bash
+python app.py
+```
+
+Po poprawnym uruchomieniu, otwórz przeglądarkę internetową i przejdź do **http://localhost:5000**
+
+
+## Licencja
+
+Projekt udostępniany jest na licencji MIT.
