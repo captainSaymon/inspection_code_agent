@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>SOLID & Demeter Checker</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><img src="./assets/baner.png"></h1>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="controls">
+                    <label for="language-select">Język programowania:</label>
+                    <select id="language-select">
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript / TypeScript</option>
+                        <option value="Java">Java</option>
+                        <option value="C#">C#</option>
+                    </select>
+                </div>
+
+                <textarea id="code-input" placeholder="Wklej tutaj fragment kodu źródłowego, który chcesz przetestować..."></textarea>
+                
+                <button id="analyze-btn">Wyślij</button>
+            </section>
+
+            <div id="loader" class="loader-container hidden">
+                <div class="spinner"></div>
+                <p>Analzia...</p>
+            </div>
+
+            <section id="report-section" class="report-section hidden">
+                <h2>Wynik:</h2>
+                <div id="report-content" class="markdown-body"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
