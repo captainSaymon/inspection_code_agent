@@ -8,3 +8,9 @@
 ![Gemini API](https://img.shields.io/badge/Gemini_API-4285F4?style=for-the-badge&logo=google-gemini&logoColor=white)
 
 ICA to aplikacja webowa wspierająca testerów oprogramowania. Narzędzie wykorzystuje możliwości udostępniane przez API Gemini do automatycznej analizy fragmentów kodu źródłowego pod kątem zgodności z zasadami projektowymi SOLID oraz Prawem Demeter.
+
+## Instalacja bibliotek
+
+```bash
+pip install -q -U google-genai
+```
